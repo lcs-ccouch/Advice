@@ -12,6 +12,8 @@ struct AdviceApp: App {
     var body: some Scene {
         WindowGroup {
             AdviceView()
+            // make the database available to all child views through the enviornment
+                .environment(\.blackbirdDatabase, AppDatabase.instance)
         }
     }
 }
