@@ -20,7 +20,12 @@ struct AdviceView: View {
                     .font(.title)
                     .multilineTextAlignment(.center)
                 
-                Button(action: { NuggetOpacity = 1.0
+                Button(action: {
+                    withAnimation(.easeIn(duration: 1.0)) {
+                        NuggetOpacity = 1.0
+                        
+                    }
+                    
                 }, label: {
                     Image(systemName: "arrow.down.circle.fill")
                         .resizable()
