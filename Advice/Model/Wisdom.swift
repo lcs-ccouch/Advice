@@ -8,10 +8,14 @@
 import Foundation
 
 
-struct Advice: Identifiable {
-    let id: Int
-    let advice: String
-    
+struct Advice: Codable {
+    let slip: Slip
+
 }
 
-let exampleAdvice = Advice(id: 10, advice:"The more tiems you try the more times you'll fail get used to it")
+struct Slip: Identifiable, Codable {
+    let id: Int
+    let advice: String
+}
+
+let exampleAdvice = Advice(slip: Slip(id: 10, advice:"The more tiems you try the more times you'll fail get used to it"))
