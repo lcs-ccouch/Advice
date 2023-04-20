@@ -13,6 +13,7 @@ struct AdviceView: View {
     // 0.0 is invisible, 1.0 is visible
     @State var NuggetOpacity = 0.0
     // MARK: Computed properties
+    @State var currentAdvice = exampleAdvice
     var body: some View {
         NavigationView {
             VStack {
@@ -33,7 +34,7 @@ struct AdviceView: View {
                         .frame(width: 40)
                         .tint(.black)
                 })
-                Text("Random nugget of wisdom ")
+                Text(currentAdvice.advice)
                     .font(.title)
                     .multilineTextAlignment(.center)
                     .opacity(NuggetOpacity)
