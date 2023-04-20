@@ -11,9 +11,19 @@ struct AdviceView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Nugget of wisdom")
+                Text("Click for Wisdom")
                     .font(.title)
                     .multilineTextAlignment(.center)
+               
+                Button(action: {
+                }, label: {
+                    Image(systemName: "arrow.down.circle.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40)
+                        .tint(.black)
+                })
+                Text("random Nugget of wisdom ")
             }
             .navigationTitle("Nuggets of Wisdom")
         }
