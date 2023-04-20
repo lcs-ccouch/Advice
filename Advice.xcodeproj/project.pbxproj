@@ -14,6 +14,7 @@
 		21CF814929F0C9B800D5E50C /* Wisdom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CF814829F0C9B800D5E50C /* Wisdom.swift */; };
 		21CF814C29F0CE8900D5E50C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CF814B29F0CE8900D5E50C /* NetworkService.swift */; };
 		21CF814F29F16A5600D5E50C /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 21CF814E29F16A5600D5E50C /* Blackbird */; };
+		21CF815329F16D4600D5E50C /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CF815229F16D4600D5E50C /* AppDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		21CF814829F0C9B800D5E50C /* Wisdom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wisdom.swift; sourceTree = "<group>"; };
 		21CF814B29F0CE8900D5E50C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		21CF815029F16B3E00D5E50C /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = Advice/db.sqlite; sourceTree = SOURCE_ROOT; };
+		21CF815229F16D4600D5E50C /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		21CF812829F0BFFC00D5E50C = {
 			isa = PBXGroup;
 			children = (
+				21CF815129F16D2400D5E50C /* Helpers */,
 				21CF813329F0BFFC00D5E50C /* Advice */,
 				21CF813229F0BFFC00D5E50C /* Products */,
 			);
@@ -99,6 +102,14 @@
 				21CF814B29F0CE8900D5E50C /* NetworkService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		21CF815129F16D2400D5E50C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				21CF815229F16D4600D5E50C /* AppDatabase.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 				21CF814929F0C9B800D5E50C /* Wisdom.swift in Sources */,
 				21CF814C29F0CE8900D5E50C /* NetworkService.swift in Sources */,
 				21CF813529F0BFFC00D5E50C /* AdviceApp.swift in Sources */,
+				21CF815329F16D4600D5E50C /* AppDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
