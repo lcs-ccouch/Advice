@@ -15,6 +15,7 @@
 		21CF814C29F0CE8900D5E50C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CF814B29F0CE8900D5E50C /* NetworkService.swift */; };
 		21CF814F29F16A5600D5E50C /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 21CF814E29F16A5600D5E50C /* Blackbird */; };
 		21CF815329F16D4600D5E50C /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CF815229F16D4600D5E50C /* AppDatabase.swift */; };
+		21CF815729F16E8400D5E50C /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CF815629F16E8400D5E50C /* FavouritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		21CF814B29F0CE8900D5E50C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		21CF815029F16B3E00D5E50C /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = Advice/db.sqlite; sourceTree = SOURCE_ROOT; };
 		21CF815229F16D4600D5E50C /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		21CF815629F16E8400D5E50C /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				21CF814529F0C57C00D5E50C /* AdviceView.swift */,
 				21CF814A29F0CE7000D5E50C /* Services */,
+				21CF815629F16E8400D5E50C /* FavouritesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				21CF814929F0C9B800D5E50C /* Wisdom.swift in Sources */,
 				21CF814C29F0CE8900D5E50C /* NetworkService.swift in Sources */,
 				21CF813529F0BFFC00D5E50C /* AdviceApp.swift in Sources */,
+				21CF815729F16E8400D5E50C /* FavouritesView.swift in Sources */,
 				21CF815329F16D4600D5E50C /* AppDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
