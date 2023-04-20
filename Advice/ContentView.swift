@@ -9,16 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("SOME PEICE OF WISDOM")
-                .font(.title)
-                .multilineTextAlignment(.center)
-            
-            
-            
+        NavigationView {
+            VStack {
+                Text("SOME PEICE OF WISDOM")
+                    .font(.title)
+                    .multilineTextAlignment(.center)
+                
+                
+                
+            }
+            .navigationTitle("Random Advice")
         }
-        .navigationTitle("Random Advice")
-        
     }
 }
 
