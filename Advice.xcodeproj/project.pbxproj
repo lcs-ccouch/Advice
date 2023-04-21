@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		217C3F5829F2409300ED3120 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 21CF815029F16B3E00D5E50C /* db.sqlite */; };
 		21CF813529F0BFFC00D5E50C /* AdviceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CF813429F0BFFC00D5E50C /* AdviceApp.swift */; };
 		21CF813929F0BFFE00D5E50C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CF813829F0BFFE00D5E50C /* Assets.xcassets */; };
 		21CF813C29F0BFFE00D5E50C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CF813B29F0BFFE00D5E50C /* Preview Assets.xcassets */; };
@@ -83,9 +84,9 @@
 		21CF814429F0C56800D5E50C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				21CF815629F16E8400D5E50C /* FavouritesView.swift */,
 				21CF814529F0C57C00D5E50C /* AdviceView.swift */,
 				21CF814A29F0CE7000D5E50C /* Services */,
-				21CF815629F16E8400D5E50C /* FavouritesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217C3F5829F2409300ED3120 /* db.sqlite in Resources */,
 				21CF813C29F0BFFE00D5E50C /* Preview Assets.xcassets in Resources */,
 				21CF813929F0BFFE00D5E50C /* Assets.xcassets in Resources */,
 			);

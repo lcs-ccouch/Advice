@@ -8,14 +8,14 @@ import Blackbird
 import Foundation
 
 
-struct Advice: Codable {
-    let slip: Slip
-
-}
-
-struct Slip: Identifiable, Codable {
-   @BlackbirdColumn var id: Int
+struct Advice: Identifiable, Codable, BlackbirdModel {
+    @BlackbirdColumn var id: Int
     @BlackbirdColumn var advice: String
 }
 
-let exampleAdvice = Advice(slip: Slip(id: 10, advice:"The more tiems you try the more times you'll fail get used to it"))
+struct Slip: Codable {
+    var slip: Advice
+}
+
+
+let exampleAdvice = Advice(id: 10, advice:"The more tiems you try the more times you'll fail get used to it")

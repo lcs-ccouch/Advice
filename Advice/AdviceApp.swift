@@ -11,9 +11,18 @@ import SwiftUI
 struct AdviceApp: App {
     var body: some Scene {
         WindowGroup {
-            AdviceView()
+            TabView {
+                AdviceView()
+                    .tabItem {
+                        Label("Fresh", systemImage: "carrot")
+                    }
+                FavouritesView()
+                    .tabItem {
+                        Label("Favourites", systemImage: "face.smiling")
+                    }
+            }
             // make the database available to all child views through the enviornment
-                .environment(\.blackbirdDatabase, AppDatabase.instance)
+            .environment(\.blackbirdDatabase, AppDatabase.instance)
         }
     }
 }

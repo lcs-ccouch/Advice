@@ -46,11 +46,11 @@ struct NetworkService {
             
             
             // Use the decoder object to convert the raw data into an instance of our Swift data type
-            let decodedData = try decoder.decode(Advice.self, from: data)
+            let decodedData = try decoder.decode(Slip.self, from: data)
             
 
             // If we got here, decoding succeeded, return the instance of our data type
-            return decodedData
+            return decodedData.slip
             
         } catch {
             
