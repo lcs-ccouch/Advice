@@ -19,7 +19,7 @@ struct FavouritesView: View {
                 VStack(alignment: .leading) {
                     Text(currentAdvice.advice)
                         .bold()
-                    Text(currentAdvice.advice)
+                   
                 }
             }
             .navigationTitle("Favourites")
